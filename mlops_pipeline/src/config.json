@@ -1,0 +1,9 @@
+{
+    "project_code": "mlops_credito_m5",
+    "project_name": "Pipeline MLOps - Prediccion de Pago a Tiempo - Modulo 5 Henry",
+    "version": "1.0.0",
+    "author": "Anastasia",
+    "target_variable": "Pago_atiempo",
+    "data_source": "../../Base_de_datos.csv",
+    "description": "Modelo de clasificacion binaria para anticipar el comportamiento de pago de clientes de credito."
+}

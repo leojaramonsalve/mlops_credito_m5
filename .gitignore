@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Entornos virtuales
+*-venv/
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Modelos y datos procesados (artefactos grandes, no van al repo)
+models/*.joblib
+models/*.pkl
+data_processed/*.csv
+data_processed/*.parquet
+!models/.gitkeep
+!data_processed/.gitkeep
+!streamlit_app/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Testing y cobertura
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
+# Docker (imagenes locales)
+*.tar
+
+# Sonar
+.scannerwork/
+.sonar/
+
+# OneDrive / Windows
+Thumbs.db
+desktop.ini
+
+# Archivos temporales (no parte del proyecto)
+image1.png
+image2.png
+image3.png
+image4.png
+
+# set_up.bat duplicado en root (el oficial vive en mlops_pipeline/)
+/set_up.bat

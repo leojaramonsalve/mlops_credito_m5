@@ -1,0 +1,39 @@
+# Manipulacion de datos
+pandas==2.2.2
+numpy==1.26.4
+openpyxl==3.1.5
+pyarrow==17.0.0
+
+# Visualizacion
+matplotlib==3.9.0
+seaborn==0.13.2
+
+# Machine Learning
+scikit-learn==1.5.0
+xgboost==2.0.3
+lightgbm==4.3.0
+feature-engine==1.8.0
+imbalanced-learn==0.14.2
+
+# Estadistica (para drift)
+scipy==1.13.1
+
+# API y validacion
+fastapi==0.111.0
+python-multipart==0.0.32
+uvicorn[standard]==0.30.1
+pydantic==2.7.4
+requests==2.32.3
+
+# Dashboard
+streamlit==1.36.0
+
+# Jupyter
+jupyter==1.0.0
+notebook==7.2.1
+ipykernel==6.29.4
+ipywidgets==8.1.3
+
+# Testing y calidad de codigo (Extra Credit: SonarCloud)
+pytest==8.2.2
+pytest-cov==5.0.0
