@@ -1,0 +1,99 @@
+{
+  "tipo_credito": {
+    "tipo_esperado": "int",
+    "valores_permitidos": [
+      4,
+      6,
+      7,
+      9,
+      10,
+      68
+    ],
+    "nulos_permitidos": false
+  },
+  "fecha_prestamo": {
+    "tipo_esperado": "datetime",
+    "rango_min": "2024-11-26 09:17:04",
+    "rango_max": "2026-04-26 18:43:52",
+    "nulos_permitidos": false
+  },
+  "capital_prestado": {
+    "tipo_esperado": "float",
+    "min": 360000.0,
+    "max": 82888305.6,
+    "nulos_permitidos": false
+  },
+  "plazo_meses": {
+    "tipo_esperado": "int",
+    "valores_permitidos": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      18,
+      20,
+      24,
+      30,
+      36,
+      48,
+      90
+    ],
+    "nulos_permitidos": false
+  },
+  "edad_cliente": {
+    "tipo_esperado": "int",
+    "min": 18,
+    "max": 100,
+    "nulos_permitidos": false
+  },
+  "tipo_laboral": {
+    "tipo_esperado": "str",
+    "valores_permitidos": [
+      "Independiente",
+      "Empleado"
+    ],
+    "nulos_permitidos": false
+  },
+  "salario_cliente": {
+    "tipo_esperado": "int",
+    "min": 0,
+    "max": 66000000000.0,
+    "nulos_permitidos": false
+  },
+  "puntaje": {
+    "tipo_esperado": "float",
+    "min": -38.00999,
+    "max": 95.227787,
+    "nulos_permitidos": false
+  },
+  "puntaje_datacredito": {
+    "tipo_esperado": "float",
+    "min": -7.0,
+    "max": 999.0,
+    "nulos_permitidos": true
+  },
+  "tendencia_ingresos": {
+    "tipo_esperado": "str",
+    "valores_permitidos": [
+      "Decreciente",
+      "Estable",
+      "Creciente"
+    ],
+    "nulos_permitidos": true
+  },
+  "Pago_atiempo": {
+    "tipo_esperado": "int",
+    "valores_permitidos": [
+      0,
+      1
+    ],
+    "nulos_permitidos": false
+  }
+}
