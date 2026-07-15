@@ -1,0 +1,169 @@
+{
+  "mejor_modelo": "lgbm",
+  "score_compuesto_mejor": 0.574,
+  "threshold_optimo": 0.35,
+  "cv_folds": 3,
+  "random_state": 42,
+  "modelos_baseline": [
+    {
+      "modelo": "logreg",
+      "accuracy": 0.6475,
+      "roc_auc": 0.6613,
+      "pr_auc": 0.9706,
+      "f1_macro": 0.4566,
+      "f1_clase_0_impago": 0.1345,
+      "f1_clase_1_paga": 0.7787,
+      "precision_clase_0_impago": 0.0761,
+      "recall_clase_0_impago": 0.5784,
+      "precision_clase_1_paga": 0.9688,
+      "recall_clase_1_paga": 0.6509,
+      "matriz_confusion": [
+        [
+          59,
+          43
+        ],
+        [
+          716,
+          1335
+        ]
+      ],
+      "cv_roc_auc_media": 0.6725,
+      "cv_roc_auc_std": 0.0309,
+      "cv_f1_macro_media": 0.4662,
+      "cv_f1_macro_std": 0.0032
+    },
+    {
+      "modelo": "rf",
+      "accuracy": 0.9526,
+      "roc_auc": 0.6435,
+      "pr_auc": 0.9725,
+      "f1_macro": 0.5405,
+      "f1_clase_0_impago": 0.1053,
+      "f1_clase_1_paga": 0.9757,
+      "precision_clase_0_impago": 0.5,
+      "recall_clase_0_impago": 0.0588,
+      "precision_clase_1_paga": 0.9552,
+      "recall_clase_1_paga": 0.9971,
+      "matriz_confusion": [
+        [
+          6,
+          96
+        ],
+        [
+          6,
+          2045
+        ]
+      ],
+      "cv_roc_auc_media": 0.657,
+      "cv_roc_auc_std": 0.0148,
+      "cv_f1_macro_media": 0.5124,
+      "cv_f1_macro_std": 0.0197
+    },
+    {
+      "modelo": "xgb",
+      "accuracy": 0.9029,
+      "roc_auc": 0.6578,
+      "pr_auc": 0.9735,
+      "f1_macro": 0.5546,
+      "f1_clase_0_impago": 0.1606,
+      "f1_clase_1_paga": 0.9485,
+      "precision_clase_0_impago": 0.1361,
+      "recall_clase_0_impago": 0.1961,
+      "precision_clase_1_paga": 0.9591,
+      "recall_clase_1_paga": 0.9381,
+      "matriz_confusion": [
+        [
+          20,
+          82
+        ],
+        [
+          127,
+          1924
+        ]
+      ],
+      "cv_roc_auc_media": 0.6584,
+      "cv_roc_auc_std": 0.0093,
+      "cv_f1_macro_media": 0.5609,
+      "cv_f1_macro_std": 0.0078
+    },
+    {
+      "modelo": "knn",
+      "accuracy": 0.9526,
+      "roc_auc": 0.5855,
+      "pr_auc": 0.9625,
+      "f1_macro": 0.4975,
+      "f1_clase_0_impago": 0.0192,
+      "f1_clase_1_paga": 0.9757,
+      "precision_clase_0_impago": 0.5,
+      "recall_clase_0_impago": 0.0098,
+      "precision_clase_1_paga": 0.953,
+      "recall_clase_1_paga": 0.9995,
+      "matriz_confusion": [
+        [
+          1,
+          101
+        ],
+        [
+          1,
+          2050
+        ]
+      ],
+      "cv_roc_auc_media": 0.6133,
+      "cv_roc_auc_std": 0.0136,
+      "cv_f1_macro_media": 0.4927,
+      "cv_f1_macro_std": 0.0034
+    },
+    {
+      "modelo": "lgbm",
+      "accuracy": 0.9025,
+      "roc_auc": 0.6482,
+      "pr_auc": 0.9705,
+      "f1_macro": 0.5671,
+      "f1_clase_0_impago": 0.186,
+      "f1_clase_1_paga": 0.9481,
+      "precision_clase_0_impago": 0.1538,
+      "recall_clase_0_impago": 0.2353,
+      "precision_clase_1_paga": 0.9609,
+      "recall_clase_1_paga": 0.9356,
+      "matriz_confusion": [
+        [
+          24,
+          78
+        ],
+        [
+          132,
+          1919
+        ]
+      ],
+      "cv_roc_auc_media": 0.646,
+      "cv_roc_auc_std": 0.0125,
+      "cv_f1_macro_media": 0.5619,
+      "cv_f1_macro_std": 0.0152
+    }
+  ],
+  "metricas_threshold_optimo": {
+    "modelo": "optimo",
+    "accuracy": 0.9429,
+    "roc_auc": 0.6482,
+    "pr_auc": 0.9705,
+    "f1_macro": 0.5725,
+    "f1_clase_0_impago": 0.1745,
+    "f1_clase_1_paga": 0.9704,
+    "precision_clase_0_impago": 0.2766,
+    "recall_clase_0_impago": 0.1275,
+    "precision_clase_1_paga": 0.9577,
+    "recall_clase_1_paga": 0.9834,
+    "matriz_confusion": [
+      [
+        13,
+        89
+      ],
+      [
+        34,
+        2017
+      ]
+    ],
+    "threshold": 0.35
+  },
+  "nota_optimizacion": "SMOTE + GridSearch aplicado en model_training_evaluation.py. Ver models/model_metrics.json para artefactos completos."
+}

@@ -1,0 +1,34 @@
+{
+  "numericas_continuas": [
+    "capital_prestado",
+    "salario_cliente",
+    "total_otros_prestamos",
+    "cuota_pactada",
+    "puntaje_datacredito",
+    "promedio_ingresos_datacredito",
+    "ratio_cuota_salario",
+    "ratio_capital_salario",
+    "ratio_otros_salario",
+    "endeudamiento_total"
+  ],
+  "numericas_discretas": [
+    "plazo_meses",
+    "edad_cliente",
+    "cant_creditosvigentes",
+    "huella_consulta",
+    "creditos_sectorFinanciero",
+    "creditos_sectorCooperativo",
+    "creditos_sectorReal",
+    "tiene_historial_datacredito",
+    "multiples_sectores",
+    "anio_prestamo",
+    "mes_prestamo"
+  ],
+  "categoricas_nominales": [
+    "tipo_credito",
+    "tipo_laboral"
+  ],
+  "categoricas_ordinales": [
+    "tendencia_ingresos"
+  ]
+}

@@ -14,16 +14,23 @@ ENV/
 # Jupyter
 .ipynb_checkpoints/
 
-# Modelos y datos procesados (artefactos grandes, no van al repo)
-models/*.joblib
-models/*.pkl
-data_processed/*.csv
-data_processed/*.parquet
+# ==== ARCHIVOS DE AVANCES 3, 4 Y EXTRA CREDIT ====
+# Se descomentan estas lineas cuando llegue el momento de commitear cada avance.
+
+# Avance 3 - Drift y monitoreo (aun en stash)
+data_processed/prediction_log.csv
+data_processed/drift_metrics.csv
+data_processed/drift_summary.json
+data_processed/model_performance_drift.json
+
+# Preserva los .gitkeep para mantener las carpetas visibles
 !models/.gitkeep
 !data_processed/.gitkeep
 !streamlit_app/.gitkeep
+!tests/.gitkeep
+!.github/workflows/.gitkeep
 
-# IDE
+# IDE / editores
 .vscode/
 .idea/
 *.swp
@@ -34,16 +41,16 @@ data_processed/*.parquet
 *.log
 logs/
 
-# Testing y cobertura
+# Testing (Extra Credit - aun en stash)
 .coverage
 .coverage.*
 htmlcov/
 .pytest_cache/
 
-# Docker (imagenes locales)
+# Docker (Avance 4 - aun en stash)
 *.tar
 
-# Sonar
+# SonarCloud (Extra Credit - aun en stash)
 .scannerwork/
 .sonar/
 
@@ -51,11 +58,28 @@ htmlcov/
 Thumbs.db
 desktop.ini
 
-# Archivos temporales (no parte del proyecto)
-image1.png
-image2.png
-image3.png
-image4.png
+# ==== TUS DOCUMENTOS PERSONALES (nunca van al repo) ====
+Guia_*.docx
+Guia_*.pdf
+Reporte_*.docx
+Reporte_*.pdf
+Instrucciones_*.docx
+Instrucciones_*.pdf
+Consignas *.docx
+Consignas*.docx
+Rubrica *.xlsx
+Rubrica*.xlsx
 
-# set_up.bat duplicado en root (el oficial vive en mlops_pipeline/)
-/set_up.bat
+# Dataset original .xlsx (usamos solo el .csv en el repo)
+Base_de_datos.xlsx
+
+# ==== SCRIPTS PERSONALES DE WORKFLOW (no van al repo) ====
+preparar_avance_*.bat
+commit_avance_*.bat
+init_git_avance_*.bat
+init_git_v2.bat
+init_git.bat
+
+# Temporales / miscelaneos
+image*.png
+*.tmp

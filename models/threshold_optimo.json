@@ -1,0 +1,28 @@
+{
+  "threshold": 0.35,
+  "metricas_en_threshold": {
+    "modelo": "optimo",
+    "accuracy": 0.9429,
+    "roc_auc": 0.6482,
+    "pr_auc": 0.9705,
+    "f1_macro": 0.5725,
+    "f1_clase_0_impago": 0.1745,
+    "f1_clase_1_paga": 0.9704,
+    "precision_clase_0_impago": 0.2766,
+    "recall_clase_0_impago": 0.1275,
+    "precision_clase_1_paga": 0.9577,
+    "recall_clase_1_paga": 0.9834,
+    "matriz_confusion": [
+      [
+        13,
+        89
+      ],
+      [
+        34,
+        2017
+      ]
+    ],
+    "threshold": 0.35
+  },
+  "criterio": "f1_macro (balanceado entre clases)"
+}
