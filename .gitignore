@@ -17,11 +17,9 @@ ENV/
 # ==== ARCHIVOS DE AVANCES 3, 4 Y EXTRA CREDIT ====
 # Se descomentan estas lineas cuando llegue el momento de commitear cada avance.
 
-# Avance 3 - Drift y monitoreo (aun en stash)
-data_processed/prediction_log.csv
-data_processed/drift_metrics.csv
-data_processed/drift_summary.json
-data_processed/model_performance_drift.json
+# Avance 3 - Drift y monitoreo: ahora SI se versionan (entrega V1.1.1)
+# prediction_log.csv, drift_metrics.csv, drift_summary.json y
+# model_performance_drift.json son artefactos de la entrega del Avance 3.
 
 # Preserva los .gitkeep para mantener las carpetas visibles
 !models/.gitkeep

@@ -1,0 +1,57 @@
+{
+  "fecha_analisis": "2026-07-23T12:20:46.026199",
+  "periodo_historico": {
+    "desde": "2024-11-26 09:17:04",
+    "hasta": "2025-05-26 13:31:53",
+    "n_registros": 7534
+  },
+  "periodo_actual": {
+    "desde": "2025-05-26 13:32:16",
+    "hasta": "2026-04-26 18:43:52",
+    "n_registros": 3229
+  },
+  "data_drift": {
+    "variables_con_drift_severo": 6,
+    "variables_con_drift_moderado": 10,
+    "variables_sin_drift": 8,
+    "total_variables_analizadas": 24,
+    "variables_severas": [
+      "total_otros_prestamos",
+      "promedio_ingresos_datacredito",
+      "ratio_otros_salario",
+      "endeudamiento_total",
+      "plazo_meses",
+      "mes_prestamo"
+    ]
+  },
+  "model_drift": {
+    "performance_historico": {
+      "n": 7534,
+      "roc_auc": 0.9383,
+      "f1_macro": 0.7936,
+      "f1_clase_0": 0.6181,
+      "tasa_impago_real": 0.0535,
+      "tasa_impago_predicha": 0.096
+    },
+    "performance_actual": {
+      "n": 3229,
+      "roc_auc": 0.9172,
+      "f1_macro": 0.8409,
+      "f1_clase_0": 0.6939,
+      "tasa_impago_real": 0.0334,
+      "tasa_impago_predicha": 0.0424
+    },
+    "caida_roc_auc": 0.0211,
+    "umbral_alerta": 0.05,
+    "alerta_model_drift": "OK"
+  },
+  "umbrales_aplicados": {
+    "KS_pvalue": 0.05,
+    "PSI_warn": 0.1,
+    "PSI_alert": 0.25,
+    "JS_divergence": 0.1,
+    "Chi2_pvalue": 0.05,
+    "caida_AUC_alerta": 0.05
+  },
+  "recomendacion": "MONITOREO_REFORZADO: multiples variables con drift severo aunque la performance se mantiene. Programar reentrenamiento preventivo."
+}

@@ -1,0 +1,21 @@
+{
+  "performance_historico": {
+    "n": 7534,
+    "roc_auc": 0.9383,
+    "f1_macro": 0.7936,
+    "f1_clase_0": 0.6181,
+    "tasa_impago_real": 0.0535,
+    "tasa_impago_predicha": 0.096
+  },
+  "performance_actual": {
+    "n": 3229,
+    "roc_auc": 0.9172,
+    "f1_macro": 0.8409,
+    "f1_clase_0": 0.6939,
+    "tasa_impago_real": 0.0334,
+    "tasa_impago_predicha": 0.0424
+  },
+  "caida_roc_auc": 0.0211,
+  "umbral_alerta": 0.05,
+  "alerta_model_drift": "OK"
+}
