@@ -148,16 +148,39 @@ En VS Code, los notebooks (`Cargar_datos.ipynb`, `comprension_eda.ipynb`, `model
 
 ---
 
+## API y despliegue (Avance 4)
+
+La API expone el modelo como servicio REST con FastAPI. Endpoints principales: `/predict` (un cliente),
+prediccion por lotes, `/health` y `/model_info`. Devuelve la probabilidad de pago y el veredicto segun el
+umbral 0.35.
+
+**Correr la API en local:**
+```cmd
+cd mlops_pipeline\src
+uvicorn model_deploy:app --reload --port 8000
+```
+Abrir la interfaz interactiva en `http://localhost:8000/docs`.
+
+**Construir y correr con Docker** (desde la raiz del repo):
+```cmd
+docker build -t mlops_credito_m5:latest .
+docker run -p 8000:8000 mlops_credito_m5:latest
+```
+La imagen empaqueta Python 3.10, las dependencias, el modelo y el codigo; corre uvicorn como usuario no-root
+con healthcheck. `.dockerignore` excluye notebooks, datos crudos, tests y el dashboard para mantenerla liviana.
+
+---
+
 ## Branches y versionado
 
 ```
-                 V1.0.0       V1.0.1       V1.1.0       V1.1.1
-master        ---o------------o------------o------------o
+                 V1.0.0       V1.0.1       V1.1.0       V1.1.1       V1.2.0
+master        ---o------------o------------o------------o------------o
                               ^ merge via Pull Request
-certification ---o------------o------------o------------o
+certification ---o------------o------------o------------o------------o
 
-developer     ---o------------o------------o------------o
-                 estructura   carga+EDA    FE+modelado   drift+dashboard
+developer     ---o------------o------------o------------o------------o
+                 estructura   carga+EDA    FE+modelado   drift+dash    API+Docker
 ```
 
 | Version | Avance | Contenido |
@@ -166,11 +189,11 @@ developer     ---o------------o------------o------------o
 | V1.0.1  | 1 | Cargar_datos + comprension_eda |
 | V1.1.0  | 2 | ft_engineering + model_training_evaluation + modelamiento |
 | V1.1.1  | 3 | model_monitoring + dashboard Streamlit + README |
-| V1.2.0  | 4 | model_deploy (FastAPI) + Dockerfile *(pendiente)* |
+| V1.2.0  | 4 | model_deploy (FastAPI) + Dockerfile + .dockerignore |
 
 Flujo de PR: developer -> certification (validacion) -> master (produccion estable).
 
-*Nota: el grafico de la consigna (image2) rotula la rama principal como `main`; este repositorio usa `master`, siguiendo el texto de las instrucciones. La version V1.2.0 (Avance 4) aun no se ha generado.*
+*Nota: el grafico de la consigna (image2) rotula la rama principal como `main`; este repositorio usa `master`, siguiendo el texto de las instrucciones.*
 
 ---
 

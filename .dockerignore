@@ -1,0 +1,66 @@
+# Excluir del build Docker
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*-venv/
+venv/
+.venv
+
+# Notebooks no necesarios en runtime
+*.ipynb
+*.ipynb_checkpoints/
+
+# Git
+.git/
+.gitignore
+.github/
+
+# Tests
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Dataset crudo (no se usa en runtime, solo el modelo entrenado)
+Base_de_datos.xlsx
+Base_de_datos.csv
+
+# Streamlit (no se incluye en la imagen API)
+streamlit_app/
+
+# Configs externos
+*.md
+!readme.md
+.dockerignore
+Dockerfile
+
+# Logs
+*.log
+logs/
+
+# Imagenes del docx
+image*.png
+
+# Documentacion
+Consignas*.docx
+Rubrica*.xlsx
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sonar
+.scannerwork/
+.sonar/
+sonar-project.properties
+
+# Scripts de setup
+set_up.bat
+init_git.bat
